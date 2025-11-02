@@ -1,0 +1,15 @@
+Collecting opencv-python-headless
+  Using cached opencv_python_headless-4.12.0.88-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Collecting numpy<2.3.0,>=2 (from opencv-python-headless)
+  Downloading numpy-2.2.6-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Downloading opencv_python_headless-4.12.0.88-cp37-abi3-win_amd64.whl (38.9 MB)
+   ---------------------------------------- 38.9/38.9 MB 349.0 kB/s  0:02:03
+Downloading numpy-2.2.6-cp312-cp312-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 12.6/12.6 MB 503.2 kB/s  0:00:25
+Installing collected packages: numpy, opencv-python-headless
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.26.4
+    Uninstalling numpy-1.26.4:
+      Successfully uninstalled numpy-1.26.4
+
+Successfully installed numpy-2.2.6 opencv-python-headless-4.12.0.88

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+  <title>Drowsiness Detection</title>
+</head>
+<body>
+<header>Drowsiness Detection System</header>
+
+<div id="controls">
+  <button id="startBtn">Start</button>
+  <button id="stopBtn">Stop</button>
+</div>
+
+<div id="main">
+  <div id="videoContainer">
+    <video id="video" autoplay playsinline></video>
+    <div id="videoIcon">&#128247;</div> 
+    <div id="alertBox">ALERT! You are Drowsy!</div>
+  </div>
+
+  <div id="stats">
+    <strong>Status:</strong> <span id="drowsyStatus">-</span><br>
+    <strong>Eye Aspect Ratio (EAR):</strong> <span id="earValue">-</span><br>
+    <strong>Flag Count:</strong> <span id="flagCount">-</span>
+  </div>
+</div>
+
+<canvas id="canvas" style="display:none;"></canvas>
+<audio id="alertSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+<script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+<script src="./static/js/app.js"></script>
+</body>
+</html>
