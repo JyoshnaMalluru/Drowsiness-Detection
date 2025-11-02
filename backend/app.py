@@ -20,7 +20,13 @@ FRAME_CHECK = 5   # trigger alert when eyes closed for 5 frames
 MODEL_PATH = os.path.join("models", "shape_predictor_68_face_landmarks.dat")
 # ----------------
 
-app = Flask(__name__, static_folder="../frontend", static_url_path="/")
+# app = Flask(__name__, static_folder="../frontend", static_url_path="/")
+app = Flask(
+    __name__,
+    static_folder="../frontend/static",   # points to frontend/static
+    template_folder="../frontend"         # points to frontend folder for index.html
+)
+
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
